@@ -1,0 +1,142 @@
+:root {
+  --bg: #7a0000;
+  --panel: #9b0000;
+  --panel2: #b30000;
+  --border: #ffcc00;
+  --text: #ffffff;
+  --muted: rgba(255,255,255,.85);
+  --yellow: #ffcc00;
+  --yellow2: #ffe066;
+  font-family: system-ui, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.wrap {
+  max-width: 980px;
+  margin: auto;
+  padding: 18px;
+}
+
+.grid {
+  display: grid;
+  gap: 14px;
+}
+
+@media (min-width: 900px) {
+  .grid { grid-template-columns: 1fr 1fr 1fr; }
+}
+
+.card {
+  background: var(--panel);
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  padding: 14px;
+}
+
+h1, h2 {
+  margin: 6px 0;
+}
+
+.sub, .hint, .foot {
+  color: var(--muted);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  background: var(--panel2);
+  color: var(--text);
+  border: 2px solid var(--border);
+  border-radius: 10px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-weight: bold;
+  border: none;
+}
+
+.primary {
+  background: var(--yellow);
+  color: #7a0000;
+}
+
+.ghost {
+  background: transparent;
+  border: 2px solid var(--yellow);
+  color: var(--text);
+}
+
+.danger {
+  background: #400000;
+  color: var(--text);
+}
+
+.question {
+  background: var(--panel2);
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid var(--border);
+}
+
+.duel {
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+@media (min-width: 900px) {
+  .duel { grid-template-columns: 1fr 1fr; }
+}
+
+.pick {
+  background: var(--panel2);
+  border: 2px solid var(--border);
+  text-align: left;
+  padding: 14px;
+}
+
+.tag {
+  background: var(--yellow);
+  color: #7a0000;
+  padding: 6px 10px;
+  border-radius: 8px;
+  margin-right: 8px;
+}
+
+.topbox {
+  background: var(--panel2);
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid var(--border);
+}
+
+.toprow {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.toprow:last-child {
+  border-bottom: none;
+}
